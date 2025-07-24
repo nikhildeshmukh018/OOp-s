@@ -1,0 +1,16 @@
+All  the variables is called automatically inside the constructor as soon as the function is defined manually for the same
+
+need of constructor
+
+to add functionality we are not expecting user to initialize this
+
+
+basically in terms of database when we using some software once you click on software by default we are connected to database of that software so
+
+thats why we use constructor
+
+
+why python is oop's : - 
+
+
+every data structure are build in python as class 
