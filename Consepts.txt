@@ -14,3 +14,14 @@ why python is oop's : -
 
 
 every data structure are build in python as class 
+
+
+
+encapsulation
+
+getter or setter
+
+Static method 
+
+
+

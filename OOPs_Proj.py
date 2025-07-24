@@ -18,9 +18,9 @@ class Chatbot:
         elif user_input == '2':
             self.Signin()
         elif user_input == '3':
-            pass
+            self.my_posts()
         elif user_input == '4':
-            pass
+            self.message_friend()
         else:
             exit()
     def Signup(self):
@@ -44,7 +44,24 @@ class Chatbot:
                 print("Invalid credentials, please try again")
         print('\n')
         self.menu()
-
+    def my_posts(self):
+        if self.logged_in == True:
+            txt = input("Enter your post here: ")
+            print("Here are your posts {} ".format(txt))
+        else:
+            print("Please login to view your posts")
+        print('\n')
+        self.menu()
+    
+    def message_friend(self):
+        if self.logged_in == True:
+            friend = input("Enter your friend's name: ")
+            message = input("Enter your message: ")
+            print("Message sent to {friend}: {message}".format(friend=friend, message=message))
+        else:
+            print("Please login to message a friend")
+        print('\n')
+        self.menu()
  
 obj= Chatbot()
 
